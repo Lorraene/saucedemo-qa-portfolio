@@ -51,7 +51,7 @@
 - **Test data:** username `standard_user`, password empty
 - **Steps:** enter the username, leave password empty, click **Login**.
 - **Expected result:** error saying the password is required.
-- **Actual result:** [A message show up saying password is required.]
+- **Actual result:** A message show up saying password is required, "Epic sadface: Password is required".
 - **Status:** Pass
 
 ### TC-006: Open the product page without logging in
@@ -60,8 +60,8 @@
 - **Steps:**
   1. Open the product list address directly (`https://www.saucedemo.com/inventory.html`) in a new tab.
 - **Expected result:** the site sends the user to the login page and does not show products.
-- **Actual result:** [fill in]
-- **Status:** Not run
+- **Actual result:** [The site sends the user to the login page and does not show products, the following message show up " Epic sadface: You can only access '/inventory.html' when you are logged in."]
+- **Status:** Pass
 
 ---
 

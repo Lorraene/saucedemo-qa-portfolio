@@ -60,7 +60,8 @@
 - **Steps:**
   1. Open the product list address directly (`https://www.saucedemo.com/inventory.html`) in a new tab.
 - **Expected result:** the site sends the user to the login page and does not show products.
-- **Actual result:** The site sends the user to the login page and does not show products, the following message show up " Epic sadface: You can only access '/inventory.html' when you are logged in.".
+- **Actual result:** The site sends the user to the login page and does not show products, the following message show up
+" Epic sadface: You can only access '/inventory.html' when you are logged in.".
 - **Status:** Pass
 
 ---
@@ -79,7 +80,50 @@
 - **Status:** Pass
 - **Note:** repeat for the other three sort options as TC-007b, TC-007c, TC-007d.
 
+  ### TC-007b: Sort products by price, high to low
+- **Requirement:** REQ-05 | **Priority:** Medium | **Technique:** equivalence partitioning (each sort option is one partition)
+- **Preconditions:** logged in as `standard_user`
+- **Steps:**
+  1. Open the sort dropdown.
+  2. Choose **Price (high to low)**.
+  3. Read the six prices from top to bottom.
+- **Expected result:** prices appear in descending order.
+- **Actual result:** $49.99, $29.99, $15.99, $15.99, $9.99, $7.99.
+- **Status:** Pass
 
+  ### TC-007c: Sort products by name, A to Z
+- **Requirement:** REQ-05 | **Priority:** Medium | **Technique:** equivalence partitioning (each sort option is one partition)
+- **Preconditions:** logged in as `standard_user`
+- **Steps:**
+  1. Open the sort dropdown.
+  2. Choose **Name (A to Z)**.
+  3. Read the six prices from top to bottom.
+- **Expected result:** prices appear sorted by name in ascending order.
+- **Actual result:**
+$29.99 Backpack
+$9.99 Bike Light
+$15.99 Bolt T-Shirt
+$49.99 Fleece Jacket  
+$7.99 Onesie
+$15.99 T-shit
+- **Status:** Pass
+
+  ### TC-007d: Sort products by name, Z to A
+- **Requirement:** REQ-05 | **Priority:** Medium | **Technique:** equivalence partitioning (each sort option is one partition)
+- **Preconditions:** logged in as `standard_user`
+- **Steps:**
+  1. Open the sort dropdown.
+  2. Choose **Name (Z to A)**.
+  3. Read the six prices from top to bottom.
+- **Expected result:** prices appear sorted by name in descending order.
+- **Actual result:**
+$15.99 T-shit
+$7.99 Onesie
+$49.99 Fleece Jacket  
+$15.99 Bolt T-Shirt
+$9.99 Bike Light
+$29.99 Backpack
+- **Status:** Pass
 
 ### TC-008: Add one product to the cart
 - **Requirement:** REQ-06, REQ-07 | **Priority:** High
@@ -87,16 +131,16 @@
 - **Steps:**
   1. Click **Add to cart** on the first product.
 - **Expected result:** the cart icon shows `1` and the button on that product changes to **Remove**.
-- **Actual result:** [fill in]
-- **Status:** Not run
+- **Actual result:** The cart icon shows "1" and the button on that product changes to Remove.
+- **Status:** Pass
 
 ### TC-009: Remove a product from the product list
 - **Requirement:** REQ-06, REQ-07 | **Priority:** Medium
 - **Preconditions:** TC-008 done, one item in the cart
 - **Steps:** click **Remove** on that product.
 - **Expected result:** the cart badge disappears and the button changes back to **Add to cart**.
-- **Actual result:** [fill in]
-- **Status:** Not run
+- **Actual result:** The cart icon disappears the "1" and the button on the product, goes back to " add to cart ".
+- **Status:** Pass
 
 ---
 
@@ -109,8 +153,9 @@
   1. Add two different products. Write down their names and prices.
   2. Open the cart.
 - **Expected result:** the cart lists exactly those two products, with the same names and prices, quantity 1 each.
-- **Actual result:** [fill in]
-- **Status:** Not run
+- **Actual result:** Two different products were added to cart ( Onesie - $7.99 & Bolt T-Shirt - $15.99 ).
+The cart lists exactly those two products, with the same names and prices, quantity 1 each.
+- **Status:** Pass
 
 ### TC-011: Complete a purchase with valid data (happy path)
 - **Requirement:** REQ-08 | **Priority:** High | **Technique:** equivalence partitioning (valid partition)
@@ -121,8 +166,9 @@
   2. Fill in the three fields.
   3. Click **Continue**, then **Finish**.
 - **Expected result:** a confirmation page thanks the user for the order.
-- **Actual result:** [fill in]
-- **Status:** Not run
+- **Actual result:** The user was redirected to a new page with the following message " Thank you for your order!
+Your order has been dispatched, and will arrive just as fast as the pony can get there!"
+- **Status:** Pass
 
 ### TC-012: Checkout with an empty first name
 - **Requirement:** REQ-08 | **Priority:** Medium | **Technique:** equivalence partitioning (invalid partition)
@@ -130,9 +176,27 @@
 - **Test data:** first name empty, last name `User`, postal code `1000-001`
 - **Steps:** fill in the form, click **Continue**.
 - **Expected result:** the user stays on the form and sees an error saying the first name is required.
-- **Actual result:** [fill in]
-- **Status:** Not run
+- **Actual result:** The user stays on the form and sees an error saying " Error: First Name is required".
+- **Status:** Pass
 - **Note:** repeat for an empty last name (TC-012b) and an empty postal code (TC-012c).
+
+### TC-012b: Checkout with an empty last name
+- **Requirement:** REQ-08 | **Priority:** Medium | **Technique:** equivalence partitioning (invalid partition)
+- **Preconditions:** logged in, one item in the cart, checkout form open
+- **Test data:** first name 'Test', last name empty, postal code `1000-001`
+- **Steps:** fill in the form, click **Continue**.
+- **Expected result:** the user stays on the form and sees an error saying the last name is required.
+- **Actual result:** The user stays on the form and sees an error saying " Error: Last Name is required".
+- **Status:** Pass
+
+### TC-012c: Checkout with an empty postal code
+- **Requirement:** REQ-08 | **Priority:** Medium | **Technique:** equivalence partitioning (invalid partition)
+- **Preconditions:** logged in, one item in the cart, checkout form open
+- **Test data:** first name 'Test', last name 'User', postal code empty
+- **Steps:** fill in the form, click **Continue**.
+- **Expected result:** the user stays on the form and sees an error saying the postal code is required.
+- **Actual result:** The user stays on the form and sees an error saying " Error: Postal code is required".
+- **Status:** Pass
 
 ### TC-013: Order total equals item total plus tax
 - **Requirement:** REQ-09 | **Priority:** High
@@ -141,8 +205,9 @@
   1. Write down the **Item total**, **Tax** and **Total** shown.
   2. Calculate Item total + Tax by hand.
 - **Expected result:** the calculated sum equals the Total shown, to the cent.
-- **Actual result:** Item total = [ ] | Tax = [ ] | Total shown = [ ] | My sum = [ ]
-- **Status:** Not run
+- **Actual result:** Item total = 79,98 | Tax = 6,4 | Total shown = 86,38 | My sum = 86,38
+  Products chose: $29.99 Backpack and $49.99 Fleece Jacket  
+- **Status:** Pass
 
 ### TC-014: Checkout with an empty cart (boundary: 0 items)
 - **Requirement:** REQ-10 | **Priority:** High | **Technique:** boundary value analysis (lower boundary, invalid)
@@ -151,8 +216,8 @@
   1. Open the cart.
   2. Click **Checkout**.
 - **Expected result:** the user cannot proceed to checkout, or sees a message that the cart is empty.
-- **Actual result:** [fill in]
-- **Status:** Not run
+- **Actual result:** The user was redirected to a new page " Checkout: Your Information ".
+- **Status:** Fail
 - **Note:** if the site lets you continue, decide: is this a defect against REQ-10 or is my assumption too strict? Write down your reasoning either way.
 
 ### TC-015: Checkout with all available products (boundary: maximum items)

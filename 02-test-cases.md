@@ -20,7 +20,7 @@
   3. Click **Login**.
 - **Expected result:** the product list opens and shows 6 products.
 - **Actual result:** We were able to login and see 6 products.
-- **Status:** Pass | **Date:** 08/11/2026 
+- **Status:** Pass | **Date:** 08/11/2026 | **Env:** 2
 
 ### TC-002: Login with a locked-out user
 - **Requirement:** REQ-02 | **Priority:** High | **Technique:** equivalence partitioning (valid username, blocked)
@@ -60,7 +60,7 @@
 - **Steps:**
   1. Open the product list address directly (`https://www.saucedemo.com/inventory.html`) in a new tab.
 - **Expected result:** the site sends the user to the login page and does not show products.
-- **Actual result:** [The site sends the user to the login page and does not show products, the following message show up " Epic sadface: You can only access '/inventory.html' when you are logged in."]
+- **Actual result:** The site sends the user to the login page and does not show products, the following message show up " Epic sadface: You can only access '/inventory.html' when you are logged in.".
 - **Status:** Pass
 
 ---

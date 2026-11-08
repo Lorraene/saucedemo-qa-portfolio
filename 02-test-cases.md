@@ -35,24 +35,24 @@
 - **Test data:** username `standard_user`, password `wrong_password`
 - **Steps:** enter both fields, click **Login**.
 - **Expected result:** login is refused with an error saying username and password do not match.
-- **Actual result:** [fill in]
-- **Status:** Not run
+- **Actual result:** Login was refused with an error saying username and password do not match
+- **Status:** Pass
 
 ### TC-004: Login with an empty username
 - **Requirement:** REQ-03 | **Priority:** Medium | **Technique:** equivalence partitioning
 - **Test data:** username empty, valid password
 - **Steps:** leave username empty, enter the password, click **Login**.
 - **Expected result:** error saying the username is required.
-- **Actual result:** [fill in]
-- **Status:** Not run
+- **Actual result:** A message show up saying username is required.
+- **Status:** Pass
 
 ### TC-005: Login with an empty password
 - **Requirement:** REQ-03 | **Priority:** Medium | **Technique:** equivalence partitioning
 - **Test data:** username `standard_user`, password empty
 - **Steps:** enter the username, leave password empty, click **Login**.
 - **Expected result:** error saying the password is required.
-- **Actual result:** [fill in]
-- **Status:** Not run
+- **Actual result:** [A message show up saying password is required.]
+- **Status:** Pass
 
 ### TC-006: Open the product page without logging in
 - **Requirement:** REQ-04 | **Priority:** High | **Technique:** experience-based

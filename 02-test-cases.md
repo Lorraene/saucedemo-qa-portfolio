@@ -219,6 +219,8 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 - **Actual result:** The user was redirected to a new page " Checkout: Your Information ".
 - **Status:** Fail
 - **Note:** if the site lets you continue, decide: is this a defect against REQ-10 or is my assumption too strict? Write down your reasoning either way.
+It is describe on REQ-10 that "A user cannot check out with an empty cart." and in this test case, the cart with 0 products, the user was redirected to a new page
+for fill in his information.
 
 ### TC-015: Checkout with all available products (boundary: maximum items)
 - **Requirement:** REQ-06, REQ-09 | **Priority:** Medium | **Technique:** boundary value analysis (upper boundary, valid)

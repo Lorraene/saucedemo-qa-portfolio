@@ -19,8 +19,8 @@
   2. Enter the password.
   3. Click **Login**.
 - **Expected result:** the product list opens and shows 6 products.
-- **Actual result:** [fill in]
-- **Status:** Not run | **Date:** [ ] | **Env:** [ ]
+- **Actual result:** We were able to login and see 6 products.
+- **Status:** Pass | **Date:** 08/11/2026 | **Env:** [ ]
 
 ### TC-002: Login with a locked-out user
 - **Requirement:** REQ-02 | **Priority:** High | **Technique:** equivalence partitioning (valid username, blocked)

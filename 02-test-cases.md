@@ -20,15 +20,15 @@
   3. Click **Login**.
 - **Expected result:** the product list opens and shows 6 products.
 - **Actual result:** We were able to login and see 6 products.
-- **Status:** Pass | **Date:** 08/11/2026 | **Env:** [ ]
+- **Status:** Pass | **Date:** 08/11/2026 
 
 ### TC-002: Login with a locked-out user
 - **Requirement:** REQ-02 | **Priority:** High | **Technique:** equivalence partitioning (valid username, blocked)
 - **Test data:** username `locked_out_user`, valid shared password
 - **Steps:** enter both fields, click **Login**.
 - **Expected result:** the user stays on the login page and sees an error saying the user has been locked out.
-- **Actual result:** [fill in]
-- **Status:** Not run
+- **Actual result:** The user stays on the login page and sees an error saying the user has been locked out.
+- **Status:** Pass
 
 ### TC-003: Login with a wrong password
 - **Requirement:** REQ-03 | **Priority:** High | **Technique:** equivalence partitioning (invalid partition)

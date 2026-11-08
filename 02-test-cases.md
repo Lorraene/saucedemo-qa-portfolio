@@ -20,7 +20,7 @@
   3. Click **Login**.
 - **Expected result:** the product list opens and shows 6 products.
 - **Actual result:** We were able to login and see 6 products.
-- **Status:** Pass | **Date:** 08/11/2026 | **Env:** 2
+- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
 
 ### TC-002: Login with a locked-out user
 - **Requirement:** REQ-02 | **Priority:** High | **Technique:** equivalence partitioning (valid username, blocked)
@@ -75,9 +75,11 @@
   2. Choose **Price (low to high)**.
   3. Read the six prices from top to bottom.
 - **Expected result:** prices appear in ascending order.
-- **Actual result:** [write the six prices as you saw them]
-- **Status:** Not run
+- **Actual result:** $7.99, $9.99, $15.99, $15.99, $29.99, $49.99.
+- **Status:** Pass
 - **Note:** repeat for the other three sort options as TC-007b, TC-007c, TC-007d.
+
+
 
 ### TC-008: Add one product to the cart
 - **Requirement:** REQ-06, REQ-07 | **Priority:** High

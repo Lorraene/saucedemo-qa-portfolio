@@ -1,10 +1,10 @@
 # QA Portfolio: Manual Testing of SauceDemo
 
-Hi, I'm **[Your Name]**, a QA Tester in training (Quality Assurance Tester Academy at Rumos, ISTQB CTFL exam in January 2027). This repository documents my first hands-on manual testing project.
+Hi, I'm **[Lorraene]**, a QA Tester in training (Quality Assurance Tester Academy at Rumos, ISTQB CTFL exam in January 2027). This repository documents my first hands-on manual testing project.
 
 **Application under test:** [SauceDemo](https://www.saucedemo.com/), a public demo e-commerce site made by Sauce Labs for practising testing. No real data or real systems are involved.
 
-> **Status:** in progress. Last updated: [date]
+> **Status:** in progress. Last updated: 08 de Novembro
 
 ## What is in this repository
 
@@ -34,4 +34,4 @@ Browser developer tools (basic), screenshots, Markdown on GitHub. Ticketing is s
 
 ## Contact
 
-[LinkedIn link]
+[[LinkedIn link]](https://www.linkedin.com/in/lorraene-feeh/)

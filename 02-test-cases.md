@@ -30,7 +30,9 @@
 ### TC-002: Login with a locked-out user
 - **Requirement:** REQ-02 | **Priority:** High | **Technique:** equivalence partitioning (valid username, blocked)
 - **Test data:** username `locked_out_user`, valid shared password
-- **Steps:** enter both fields, click **Login**.
+- **Steps:**
+  1. Fill in username and password.
+  2. Click **Login**.
 - **Expected result:** the user stays on the login page and sees an error saying the user has been locked out.
 - **Actual result:** The user stays on the login page and sees an error saying the user has been locked out.
 - **Status:** Pass | **Date:** November 8, 2026 | **Env:** E2
@@ -38,7 +40,9 @@
 ### TC-003: Login with a wrong password
 - **Requirement:** REQ-03 | **Priority:** High | **Technique:** equivalence partitioning (invalid partition)
 - **Test data:** username `standard_user`, password `wrong_password`
-- **Steps:** enter both fields, click **Login**.
+- **Steps:**
+  1. Fill in username and password.
+  2. Click **Login**.
 - **Expected result:** login is refused with an error saying username and password do not match.
 - **Actual result:** Login was refused with an error saying username and password do not match
 - **Status:** Pass | **Date:** November 8, 2026 | **Env:** E2
@@ -46,7 +50,10 @@
 ### TC-004: Login with an empty username
 - **Requirement:** REQ-03 | **Priority:** Medium | **Technique:** equivalence partitioning
 - **Test data:** username empty, valid password
-- **Steps:** leave username empty, enter the password, click **Login**.
+- **Steps:**
+  1. At the login page, leave username empty.
+  2. Enter the password.
+  3. Click **Login**.
 - **Expected result:** error saying the username is required.
 - **Actual result:** A message show up saying username is required.
 - **Status:** Pass | **Date:** November 8, 2026 | **Env:** E2
@@ -54,7 +61,10 @@
 ### TC-005: Login with an empty password
 - **Requirement:** REQ-03 | **Priority:** Medium | **Technique:** equivalence partitioning
 - **Test data:** username `standard_user`, password empty
-- **Steps:** enter the username, leave password empty, click **Login**.
+- **Steps:**
+  1. At the login page, enter the username .
+  2. Leave password empty.
+  3. Click **Login**.
 - **Expected result:** error saying the password is required.
 - **Actual result:** A message show up saying password is required, "Epic sadface: Password is required".
 - **Status:** Pass | **Date:** November 8, 2026 | **Env:** E2
@@ -142,7 +152,8 @@ $29.99 Backpack,
 ### TC-009: Remove a product from the product list
 - **Requirement:** REQ-06, REQ-07 | **Priority:** Medium
 - **Preconditions:** TC-008 done, one item in the cart
-- **Steps:** click **Remove** on that product.
+- **Steps:**
+  1. Click **Remove** on that product.
 - **Expected result:** the cart badge disappears and the button changes back to **Add to cart**.
 - **Actual result:** The cart icon disappears the "1" and the button on the product, goes back to " add to cart ".
 - **Status:** Pass | **Date:** November 8, 2026 | **Env:** E2
@@ -167,9 +178,11 @@ The cart lists exactly those two products, with the same names and prices, quant
 - **Preconditions:** logged in, at least one item in the cart
 - **Test data:** first name `Test`, last name `User`, postal code `1000-001`
 - **Steps:**
-  1. Open the cart and click **Checkout**.
-  2. Fill in the three fields.
-  3. Click **Continue**, then **Finish**.
+  1. Open the cart and
+  2. Click **Checkout**.
+  3. Fill in the three fields: First Name; Last Name and Zip/postal Code.
+  4. Click **Continue**.
+  5. Click **Finish**.
 - **Expected result:** a confirmation page thanks the user for the order.
 - **Actual result:** The user was redirected to a new page with the following message " Thank you for your order!
 Your order has been dispatched, and will arrive just as fast as the pony can get there!"
@@ -180,7 +193,9 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 - **Requirement:** REQ-08 | **Priority:** Medium | **Technique:** equivalence partitioning (invalid partition)
 - **Preconditions:** logged in, one item in the cart, checkout form open
 - **Test data:** first name empty, last name `User`, postal code `1000-001`
-- **Steps:** fill in the form, click **Continue**.
+- **Steps:**
+  1. Fill in the fields: Last Name and Zip/Postal Code.
+  2. Click **Continue**.
 - **Expected result:** the user stays on the form and sees an error saying the first name is required.
 - **Actual result:** The user stays on the form and sees an error saying " Error: First Name is required".
 - **Status:** Pass | **Date:** November 8, 2026 | **Env:** E2
@@ -190,7 +205,9 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 - **Requirement:** REQ-08 | **Priority:** Medium | **Technique:** equivalence partitioning (invalid partition)
 - **Preconditions:** logged in, one item in the cart, checkout form open
 - **Test data:** first name 'Test', last name empty, postal code `1000-001`
-- **Steps:** fill in the form, click **Continue**.
+- **Steps:**
+  1. Fill in the fields: First Name and Zip/Postal Code.
+  2. Click **Continue**.
 - **Expected result:** the user stays on the form and sees an error saying the last name is required.
 - **Actual result:** The user stays on the form and sees an error saying " Error: Last Name is required".
 - **Status:** Pass | **Date:** November 8, 2026 | **Env:** E2
@@ -199,7 +216,9 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 - **Requirement:** REQ-08 | **Priority:** Medium | **Technique:** equivalence partitioning (invalid partition)
 - **Preconditions:** logged in, one item in the cart, checkout form open
 - **Test data:** first name 'Test', last name 'User', postal code empty
-- **Steps:** fill in the form, click **Continue**.
+- **Steps:**
+  1. Fill in the fields: First Name and Last Name.
+  2. Click **Continue**.
 - **Expected result:** the user stays on the form and sees an error saying the postal code is required.
 - **Actual result:** The user stays on the form and sees an error saying " Error: Postal code is required".
 - **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
@@ -270,10 +289,30 @@ actually shows the following message "Epic sadface: You can only access '/invent
 
 ### TC-017: Repeat the key flow in other environments
 - **Priority:** Medium
-- **Steps:** run TC-001, TC-008, TC-011 and TC-016 in E2 and E3 from the test plan.
-- **Expected result:** same results as in E1.
-- **Actual result:** [one line per environment]
-- **Status:** Not run
+- **Steps:** run TC-001, TC-008, TC-011 and TC-016 in E1 from the test plan.
+- **Expected result:** same results as in E2.
+- **Actual result:**
+  **TC-001: Login with valid credentials**
+- **Expected result:** the product list opens and shows 6 products.
+- **Actual result:** We were able to login and see 6 products.
+- **Status:** Pass | **Date:** November 22, 2026 | **Env:** E1
+
+  **TC-008: Add one product to the cart**
+- **Expected result:** the cart icon shows `1` and the button on that product changes to **Remove**.
+- **Actual result:** The cart icon shows "1" and the button on that product changes to Remove.
+- **Status:** Pass | **Date:** November 22, 2026 | **Env:** E1
+
+  **TC-011: Complete a purchase with valid data (happy path)**
+- **Expected result:** a confirmation page thanks the user for the order.
+- **Actual result:** The user was redirected to a new page with the following message " Thank you for your order!
+Your order has been dispatched, and will arrive just as fast as the pony can get there!"
+- **Status:** Pass | **Date:** November 22, 2026 | **Env:** E1
+
+  **TC-016: Logout and the back button**
+- **Expected result:** the user lands on the login page after logout, and Back does not show the product list.
+- **Actual result:** After select Logout button, the user was redirected to Login page and selecting back button in the browser does not show the product list again,
+actually shows the following message "Epic sadface: You can only access '/inventory.html' when you are logged in."
+- **Status:** Pass | **Date:** November 22, 2026 | **Env:** E1
 
 ---
 

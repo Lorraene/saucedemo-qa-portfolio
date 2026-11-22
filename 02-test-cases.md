@@ -20,7 +20,12 @@
   3. Click **Login**.
 - **Expected result:** the product list opens and shows 6 products.
 - **Actual result:** We were able to login and see 6 products.
-- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
+- **Status:** Pass | **Date:** 08/11/2026 and 22/11/2026 | **Env:** E2
+- **Evidence:**
+  TC01-Login.page
+  TC01-Homepage
+  TC01-TC01-Homepage.logout.buttom
+  TC01-TC01-Logout.page
 
 ### TC-002: Login with a locked-out user
 - **Requirement:** REQ-02 | **Priority:** High | **Technique:** equivalence partitioning (valid username, blocked)
@@ -36,7 +41,7 @@
 - **Steps:** enter both fields, click **Login**.
 - **Expected result:** login is refused with an error saying username and password do not match.
 - **Actual result:** Login was refused with an error saying username and password do not match
-- **Status:** Pass
+- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
 
 ### TC-004: Login with an empty username
 - **Requirement:** REQ-03 | **Priority:** Medium | **Technique:** equivalence partitioning
@@ -44,7 +49,7 @@
 - **Steps:** leave username empty, enter the password, click **Login**.
 - **Expected result:** error saying the username is required.
 - **Actual result:** A message show up saying username is required.
-- **Status:** Pass
+- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
 
 ### TC-005: Login with an empty password
 - **Requirement:** REQ-03 | **Priority:** Medium | **Technique:** equivalence partitioning
@@ -52,7 +57,7 @@
 - **Steps:** enter the username, leave password empty, click **Login**.
 - **Expected result:** error saying the password is required.
 - **Actual result:** A message show up saying password is required, "Epic sadface: Password is required".
-- **Status:** Pass
+- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
 
 ### TC-006: Open the product page without logging in
 - **Requirement:** REQ-04 | **Priority:** High | **Technique:** experience-based
@@ -62,7 +67,7 @@
 - **Expected result:** the site sends the user to the login page and does not show products.
 - **Actual result:** The site sends the user to the login page and does not show products, the following message show up
 " Epic sadface: You can only access '/inventory.html' when you are logged in.".
-- **Status:** Pass
+- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
 
 ---
 
@@ -77,7 +82,7 @@
   3. Read the six prices from top to bottom.
 - **Expected result:** prices appear in ascending order.
 - **Actual result:** $7.99, $9.99, $15.99, $15.99, $29.99, $49.99.
-- **Status:** Pass
+- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
 - **Note:** repeat for the other three sort options as TC-007b, TC-007c, TC-007d.
 
   ### TC-007b: Sort products by price, high to low
@@ -89,7 +94,7 @@
   3. Read the six prices from top to bottom.
 - **Expected result:** prices appear in descending order.
 - **Actual result:** $49.99, $29.99, $15.99, $15.99, $9.99, $7.99.
-- **Status:** Pass
+- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
 
   ### TC-007c: Sort products by name, A to Z
 - **Requirement:** REQ-05 | **Priority:** Medium | **Technique:** equivalence partitioning (each sort option is one partition)
@@ -106,7 +111,7 @@ $15.99 Bolt T-Shirt
 $49.99 Fleece Jacket  
 $7.99 Onesie
 $15.99 T-shit
-- **Status:** Pass
+- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
 
   ### TC-007d: Sort products by name, Z to A
 - **Requirement:** REQ-05 | **Priority:** Medium | **Technique:** equivalence partitioning (each sort option is one partition)
@@ -123,7 +128,7 @@ $49.99 Fleece Jacket
 $15.99 Bolt T-Shirt
 $9.99 Bike Light
 $29.99 Backpack
-- **Status:** Pass
+- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
 
 ### TC-008: Add one product to the cart
 - **Requirement:** REQ-06, REQ-07 | **Priority:** High
@@ -132,7 +137,7 @@ $29.99 Backpack
   1. Click **Add to cart** on the first product.
 - **Expected result:** the cart icon shows `1` and the button on that product changes to **Remove**.
 - **Actual result:** The cart icon shows "1" and the button on that product changes to Remove.
-- **Status:** Pass
+- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
 
 ### TC-009: Remove a product from the product list
 - **Requirement:** REQ-06, REQ-07 | **Priority:** Medium
@@ -140,7 +145,7 @@ $29.99 Backpack
 - **Steps:** click **Remove** on that product.
 - **Expected result:** the cart badge disappears and the button changes back to **Add to cart**.
 - **Actual result:** The cart icon disappears the "1" and the button on the product, goes back to " add to cart ".
-- **Status:** Pass
+- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
 
 ---
 
@@ -155,7 +160,7 @@ $29.99 Backpack
 - **Expected result:** the cart lists exactly those two products, with the same names and prices, quantity 1 each.
 - **Actual result:** Two different products were added to cart ( Onesie - $7.99 & Bolt T-Shirt - $15.99 ).
 The cart lists exactly those two products, with the same names and prices, quantity 1 each.
-- **Status:** Pass
+- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
 
 ### TC-011: Complete a purchase with valid data (happy path)
 - **Requirement:** REQ-08 | **Priority:** High | **Technique:** equivalence partitioning (valid partition)
@@ -168,7 +173,8 @@ The cart lists exactly those two products, with the same names and prices, quant
 - **Expected result:** a confirmation page thanks the user for the order.
 - **Actual result:** The user was redirected to a new page with the following message " Thank you for your order!
 Your order has been dispatched, and will arrive just as fast as the pony can get there!"
-- **Status:** Pass
+- **Status:** Pass | **Date:** 08/11/2026 and 22/11/2026 | **Env:** E2
+- **Evidence:** TC11-confirmation.page
 
 ### TC-012: Checkout with an empty first name
 - **Requirement:** REQ-08 | **Priority:** Medium | **Technique:** equivalence partitioning (invalid partition)
@@ -177,7 +183,7 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 - **Steps:** fill in the form, click **Continue**.
 - **Expected result:** the user stays on the form and sees an error saying the first name is required.
 - **Actual result:** The user stays on the form and sees an error saying " Error: First Name is required".
-- **Status:** Pass
+- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
 - **Note:** repeat for an empty last name (TC-012b) and an empty postal code (TC-012c).
 
 ### TC-012b: Checkout with an empty last name
@@ -187,7 +193,7 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 - **Steps:** fill in the form, click **Continue**.
 - **Expected result:** the user stays on the form and sees an error saying the last name is required.
 - **Actual result:** The user stays on the form and sees an error saying " Error: Last Name is required".
-- **Status:** Pass
+- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
 
 ### TC-012c: Checkout with an empty postal code
 - **Requirement:** REQ-08 | **Priority:** Medium | **Technique:** equivalence partitioning (invalid partition)
@@ -196,7 +202,7 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 - **Steps:** fill in the form, click **Continue**.
 - **Expected result:** the user stays on the form and sees an error saying the postal code is required.
 - **Actual result:** The user stays on the form and sees an error saying " Error: Postal code is required".
-- **Status:** Pass
+- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
 
 ### TC-013: Order total equals item total plus tax
 - **Requirement:** REQ-09 | **Priority:** High
@@ -207,7 +213,8 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 - **Expected result:** the calculated sum equals the Total shown, to the cent.
 - **Actual result:** Item total = 79,98 | Tax = 6,4 | Total shown = 86,38 | My sum = 86,38
   Products chose: $29.99 Backpack and $49.99 Fleece Jacket  
-- **Status:** Pass
+- **Status:** Pass | **Date:** 08/11/2026 and 22/11/2026 | **Env:** E2
+- **Evidence:** TC13-products.sum
 
 ### TC-014: Checkout with an empty cart (boundary: 0 items)
 - **Requirement:** REQ-10 | **Priority:** High | **Technique:** boundary value analysis (lower boundary, invalid)

@@ -242,7 +242,7 @@ for fill in his information.
 - **Actual result:** Badge shows 6 items, cart lists 6 items, total is accordingly.
 - Item total = 129,94 | Tax = 10,4 | Total shown = 140,34 | My sum = 140,34
 - **Status:** Not run | **Date:** 22/11/2026 | **Env:** E2
-- **Evidence:** TC15-login.empty.cart ; TC15-badge.shows.6 ; TC15-cart.lists.6 ; TC15--my.sum
+- **Evidence:** TC15-login.empty.cart ; TC15-badge.shows.6 ; TC15-cart.lists.6 ; TC15-my.sum
 ---
 
 ## Logout

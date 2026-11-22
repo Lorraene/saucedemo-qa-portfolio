@@ -26,7 +26,7 @@ REQ-10 A user cannot check out with an empty cart.
 It should display a message stating that the cart is empty.
 
 ## Actual result
-The user was redirected to a new page " Checkout: Your Information ".
+The user was redirected to a new page " Checkout: Your Information " and to "Checkout: Overview" without any product at the cart.
 
 ## Evidence
 <img width="513" height="283" alt="TC14-empty cart" src="https://github.com/user-attachments/assets/367763c2-8e4a-4cbd-aeb0-c8524f5ac317" />
@@ -36,18 +36,15 @@ The user was redirected to a new page " Checkout: Your Information ".
 
 
 ## Reproducibility
-Twice
+2 out of 2 attempts (Safari)
 
 ## Notes
-N/A
-
----
-
-### Severity guide
-- **Medium:** a feature misbehaves but there is a workaround.
+Suggested fix: disable Checkout when the cart is empty.
 
 
-# BUG-EXP-001: After user logged in, all products displayed has the same image.
+
+
+# BUG-EXP-001: All product images show the same dog photo when logged in as problem_user
 
 
 | Field | Value |
@@ -63,11 +60,12 @@ N/A
 | **Test account** | Username: problem_user & Password: secret_sauce|
 
 ## Preconditions
-Logged in.
+Login page open.
 
 ## Steps to reproduce
 1. Access the page https://www.saucedemo.com/  
 2. Execute login with credentials above.
+3. Observe the product images on the Products page.
 
 
 ## Expected result
@@ -81,13 +79,10 @@ The user is redirected to the main page, called "Products," and views all items 
 
 
 ## Reproducibility
-Three times in differents environments E1 and E2.  
+Reproduced 3 times: E1 (Chrome 2, macOS) and E2 (Safari 1, macOS)
 
 ## Notes
 N/A
 
----
 
-### Severity guide
-- **Medium:** a feature misbehaves but there is a workaround.
 

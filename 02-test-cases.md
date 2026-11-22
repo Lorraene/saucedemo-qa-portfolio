@@ -22,9 +22,9 @@
 - **Actual result:** We were able to login and see 6 products.
 - **Status:** Pass | **Date:** 08/11/2026 and 22/11/2026 | **Env:** E2
 - **Evidence:**
-  TC01-Login.page
-  TC01-Homepage
-  TC01-TC01-Homepage.logout.buttom
+  TC01-Login.page ;
+  TC01-Homepage ;
+  TC01-TC01-Homepage.logout.buttom ;
   TC01-TC01-Logout.page
 
 ### TC-002: Login with a locked-out user

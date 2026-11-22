@@ -26,3 +26,17 @@ TC14-empty.cart
 TC14-checkout.empty.cart
 <img width="513" height="283" alt="TC14-chekout empty cart" src="https://github.com/user-attachments/assets/6d1dab55-f9f9-4035-b303-607b4496d89b" />
 
+TC15-login.empty.cart
+<img width="524" height="283" alt="TC15-login empty cart" src="https://github.com/user-attachments/assets/b3362775-5cb8-49f2-b3a5-8d6f7c7173c7" />
+
+TC15-badge.shows.6 
+<img width="525" height="149" alt="TC15-badge shows 6" src="https://github.com/user-attachments/assets/263b7e98-3515-4293-9056-1fbf9d9fa343" />
+
+TC15-cart.lists.6
+<img width="1920" height="1077" alt="TC15-cart lists 6" src="https://github.com/user-attachments/assets/1830cc9a-2d65-4b7f-b7e4-fb9885c5ab40" />
+
+TC15-my.sum
+<img width="1006" height="555" alt="TC15-my sum" src="https://github.com/user-attachments/assets/5b733689-f8fc-4db2-838b-718cbcb18c9a" />
+
+
+

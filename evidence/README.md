@@ -1,6 +1,5 @@
 # Evidence
 
-Put screenshots here. Name them after the test case or bug they belong to, for example `TC-013-overview.png` or `BUG-001.png`.
 
 TC01-Login.page
 <img width="1022" height="573" alt="TC01-Login page" src="https://github.com/user-attachments/assets/f77cf942-5090-4c77-9514-4677e0d50ac5" />

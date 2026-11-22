@@ -51,7 +51,7 @@ SauceDemo has no published requirements. These are the behaviours I assumed, bas
 |---|---|---|
 | E1 | [Chrome, version] | [Mac, macOS version] |
 | E2 | [Safari or Firefox, version] | [Mac, macOS version] |
-| E3 | [Chrome in mobile emulation, device name] | Browser dev tools |
+
 
 ## 6. Entry and exit criteria
 

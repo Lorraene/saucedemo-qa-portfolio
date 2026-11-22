@@ -1,7 +1,5 @@
 # BUG-TC14: User was redirected to checkout with an empty cart
 
-<Copy this file, rename it `BUG-001-short-name.md`, and fill it in. Delete these hints before publishing.
-**Title tip:** say what is wrong and where. Weak: "Cart does not work". Better: "Cart badge shows 0 after adding a product as problem_user". Only write what you actually observed.>
 
 | Field | Value |
 |---|---|

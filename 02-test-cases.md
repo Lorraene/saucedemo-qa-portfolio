@@ -22,11 +22,10 @@
 - **Actual result:** We were able to login and see 6 products.
 - **Status:** Pass | **Date:** 08/11/2026 and 22/11/2026 | **Env:** E2
 - **Evidence:**
-  TC01-Login.page
-  [TC01-Login page](https://github.com/user-attachments/assets/f77cf942-5090-4c77-9514-4677e0d50ac5)
-  TC01-Homepage ;
-  TC01-TC01-Homepage.logout.buttom ;
-  TC01-TC01-Logout.page
+  [TC01-Login page](https://github.com/user-attachments/assets/f77cf942-5090-4c77-9514-4677e0d50ac5) ;
+  [TC01-homepage](https://github.com/user-attachments/assets/3877f429-ad8c-4050-9050-1ac7fc79a916) ;
+[TC01-Homepage logout button](https://github.com/user-attachments/assets/0283da6a-67db-4a32-9668-5fa364328814) ;
+  [TC01-logout page](https://github.com/user-attachments/assets/252d4f6d-9c38-4a73-aa43-7bcc28cf6b8b)
 
 ### TC-002: Login with a locked-out user
 - **Requirement:** REQ-02 | **Priority:** High | **Technique:** equivalence partitioning (valid username, blocked)

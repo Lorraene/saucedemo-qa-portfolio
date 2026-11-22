@@ -1,11 +1,11 @@
-# BUG-TC14: User was redirected to checkout with an empty cart
+# BUG-TC14: User was redirected to checkout with an empty cart.
 
 
 | Field | Value |
 |---|---|
 | **ID** | BUG-001 |
 | **Status** | Open |
-| **Reported on** | 22/11/2026 |
+| **Reported on** | November 22, 2026 |
 | **Related test case** | TC14 |
 | **Related requirement** | REQ-10 |
 | **Severity** | High: User was redirected to "Checkout: Your Information" page and "Checkout: Overview" page and was able to complete the order without items.|
@@ -45,3 +45,49 @@ N/A
 
 ### Severity guide
 - **Medium:** a feature misbehaves but there is a workaround.
+
+
+# BUG-EXP-001: After user logged in, all products displayed has the same image.
+
+
+| Field | Value |
+|---|---|
+| **ID** | BUG-001 |
+| **Status** | Open |
+| **Reported on** | November 22, 2026 |
+| **Related test case** | EXP-001 |
+| **Related requirement** | Exploratory test |
+| **Severity** | High: User was redirected to "Checkout: Your Information" page and "Checkout: Overview" page and was able to complete the order without items.|
+| **Priority** | Medium: It does not affects mostly users and doesn't block real orders. |
+| **Environment** | Google Chrome version 158.0.8127, macOS Golden Gate 27.0.1, MacBook Neo, desktop (full browser window) |
+| **Test account** | Username: problem_user & Password: secret_sauce|
+
+## Preconditions
+Logged in.
+
+## Steps to reproduce
+1. Access the page https://www.saucedemo.com/  
+2. Execute login with credentials above.
+
+
+## Expected result
+The user is redirected to the main page, called "Products," and views all items with the correct information and images.
+
+## Actual result
+ The product images do not match the actual products. An image of a dog appears on all products.
+
+## Evidence
+<img width="1024" height="592" alt="EXP-001 product page" src="https://github.com/user-attachments/assets/c336a139-2387-496d-8549-a3ddbe8b46b8" />
+
+
+## Reproducibility
+Three times in differents environments E1 and E2.  
+
+## Notes
+N/A
+
+---
+
+### Severity guide
+- **Medium:** a feature misbehaves but there is a workaround.
+

@@ -1,4 +1,4 @@
-# BUG-TC14: <User was redirected to checkout with an empty cart>
+# BUG-TC14: User was redirected to checkout with an empty cart
 
 > Copy this file, rename it `BUG-001-short-name.md`, and fill it in. Delete these hints before publishing.
 >

@@ -1,6 +1,6 @@
 # Test Plan: SauceDemo
 
-**Author:** [Your Name] | **Version:** 0.1 | **Date:** [date]
+**Author:** Lorraene Fernandes | **Version:** 0.1 | **Date:** 08 de Novembro
 
 ## 1. Objective
 

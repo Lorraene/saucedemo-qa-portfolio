@@ -5,12 +5,12 @@
 |---|---|
 | **ID** | BUG-001 |
 | **Status** | Open |
-| **Reported on** | 22/11!2026 |
-| **Related test case** | [TC14] |
-| **Related requirement** | [REQ-10] |
-| **Severity** | [High: User was redirected to Checkout: Your Information page and Checkout: Overview page and was able to complete the order without items.] |
-| **Priority** | [Medium: It does not affects mostly users and doesn't block real orders. ] |
-| **Environment** | [Safari version 27.0.1, macOS Golden Gate 27.0.1, MacBook Neo, desktop (full browser window)] |
+| **Reported on** | 22/11/2026 |
+| **Related test case** | TC14 |
+| **Related requirement** | REQ-10 |
+| **Severity** | High: User was redirected to Checkout: Your Information page and Checkout: Overview page and was able to complete the order without items.|
+| **Priority** | Medium: It does not affects mostly users and doesn't block real orders. |
+| **Environment** | Safari version 27.0.1, macOS Golden Gate 27.0.1, MacBook Neo, desktop (full browser window) |
 | **Test account** | Username: standard_user & Password: secret_sauce|
 
 ## Preconditions
@@ -36,7 +36,7 @@ The user was redirected to a new page " Checkout: Your Information ".
 
 
 ## Reproducibility
-[Twice]
+Twice
 
 ## Notes
 N/A

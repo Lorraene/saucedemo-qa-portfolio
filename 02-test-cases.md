@@ -323,7 +323,7 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 ### EXP-001: Charter, "problem_user" versus "standard_user"
 - **Mission:** explore the product list, product pages, cart and checkout as `problem_user` and compare with `standard_user`, to find behaviour that looks wrong.
 - **Time box:** 30 minutes
-- **Notes to take while exploring:** what you clicked, what you expected, what happened, screenshots.
+- **Notes to take while exploring:**
  **Product Page**
 1. After logging in with the user "problem_user" and being redirected to the main "Products" page, the expected result would be to be able to see the available products with their respective images. For example, the Sauce Labs Bolt T-Shirt item should show an image of a shirt.
 However, it is possible to see that the product images do not match the actual products. An image of a dog appears on all products.

@@ -1,6 +1,6 @@
 # Test Plan: SauceDemo
 
-**Author:** Lorraene Fernandes | **Version:** 0.1 | **Date:** 08 de Novembro
+**Author:** Lorraene Fernandes | **Version:** 0.1 | **Date:** started at November 8th
 
 ## 1. Objective
 

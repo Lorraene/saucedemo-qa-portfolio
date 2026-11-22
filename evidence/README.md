@@ -39,4 +39,6 @@ TC15-my.sum
 <img width="1006" height="555" alt="TC15-my sum" src="https://github.com/user-attachments/assets/5b733689-f8fc-4db2-838b-718cbcb18c9a" />
 
 
+TC16-logout.and.backbutton
+<img width="1010" height="575" alt="TC16-logout and backbutton" src="https://github.com/user-attachments/assets/b6a6aa70-c62d-4c50-a0af-2aa737072193" />
 

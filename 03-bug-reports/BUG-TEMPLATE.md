@@ -17,7 +17,7 @@
 Logged in.
 
 ## Steps to reproduce
-1. Without add any product, select cart button. 
+1. Without adding any product, select cart button. 
 2. Click in Checkout button.
 
 

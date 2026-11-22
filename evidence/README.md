@@ -10,7 +10,7 @@
 
 **TC01-Homepage.logout.button**
 
-![TC01-Homepage logoutbuttom](https://github.com/user-attachments/assets/0283da6a-67db-4a32-9668-5fa364328814)
+![TC01-Homepage logoutbutton](https://github.com/user-attachments/assets/0283da6a-67db-4a32-9668-5fa364328814)
 
 **TC01-Logout.page**
 

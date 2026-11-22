@@ -20,7 +20,7 @@
   3. Click **Login**.
 - **Expected result:** the product list opens and shows 6 products.
 - **Actual result:** We were able to login and see 6 products.
-- **Status:** Pass | **Date:** 08/11/2026 and 22/11/2026 | **Env:** E2
+- **Status:** Pass | **Date:** November 8, 2026 and November 22, 2026 | **Env:** E2
 - **Evidence:**
   [TC01-Login page](https://github.com/user-attachments/assets/f77cf942-5090-4c77-9514-4677e0d50ac5) ;
   [TC01-homepage](https://github.com/user-attachments/assets/3877f429-ad8c-4050-9050-1ac7fc79a916) ;
@@ -33,7 +33,7 @@
 - **Steps:** enter both fields, click **Login**.
 - **Expected result:** the user stays on the login page and sees an error saying the user has been locked out.
 - **Actual result:** The user stays on the login page and sees an error saying the user has been locked out.
-- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
+- **Status:** Pass | **Date:** November 8, 2026 | **Env:** E2
 
 ### TC-003: Login with a wrong password
 - **Requirement:** REQ-03 | **Priority:** High | **Technique:** equivalence partitioning (invalid partition)
@@ -41,7 +41,7 @@
 - **Steps:** enter both fields, click **Login**.
 - **Expected result:** login is refused with an error saying username and password do not match.
 - **Actual result:** Login was refused with an error saying username and password do not match
-- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
+- **Status:** Pass | **Date:** November 8, 2026 | **Env:** E2
 
 ### TC-004: Login with an empty username
 - **Requirement:** REQ-03 | **Priority:** Medium | **Technique:** equivalence partitioning
@@ -49,7 +49,7 @@
 - **Steps:** leave username empty, enter the password, click **Login**.
 - **Expected result:** error saying the username is required.
 - **Actual result:** A message show up saying username is required.
-- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
+- **Status:** Pass | **Date:** November 8, 2026 | **Env:** E2
 
 ### TC-005: Login with an empty password
 - **Requirement:** REQ-03 | **Priority:** Medium | **Technique:** equivalence partitioning
@@ -57,7 +57,7 @@
 - **Steps:** enter the username, leave password empty, click **Login**.
 - **Expected result:** error saying the password is required.
 - **Actual result:** A message show up saying password is required, "Epic sadface: Password is required".
-- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
+- **Status:** Pass | **Date:** November 8, 2026 | **Env:** E2
 
 ### TC-006: Open the product page without logging in
 - **Requirement:** REQ-04 | **Priority:** High | **Technique:** experience-based
@@ -67,7 +67,7 @@
 - **Expected result:** the site sends the user to the login page and does not show products.
 - **Actual result:** The site sends the user to the login page and does not show products, the following message show up
 " Epic sadface: You can only access '/inventory.html' when you are logged in.".
-- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
+- **Status:** Pass | **Date:** November 8, 2026 | **Env:** E2
 
 ---
 
@@ -82,7 +82,7 @@
   3. Read the six prices from top to bottom.
 - **Expected result:** prices appear in ascending order.
 - **Actual result:** $7.99, $9.99, $15.99, $15.99, $29.99, $49.99.
-- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
+- **Status:** Pass | **Date:** November 8, 2026 | **Env:** E2
 - **Note:** repeat for the other three sort options as TC-007b, TC-007c, TC-007d.
 
   ### TC-007b: Sort products by price, high to low
@@ -94,7 +94,7 @@
   3. Read the six prices from top to bottom.
 - **Expected result:** prices appear in descending order.
 - **Actual result:** $49.99, $29.99, $15.99, $15.99, $9.99, $7.99.
-- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
+- **Status:** Pass | **Date:** November 8, 2026 | **Env:** E2
 
   ### TC-007c: Sort products by name, A to Z
 - **Requirement:** REQ-05 | **Priority:** Medium | **Technique:** equivalence partitioning (each sort option is one partition)
@@ -110,8 +110,8 @@ $9.99 Bike Light,
 $15.99 Bolt T-Shirt,
 $49.99 Fleece Jacket,  
 $7.99 Onesie,
-$15.99 T-shit
-- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
+$15.99 T-shirt
+- **Status:** Pass | **Date:** November 8, 2026 | **Env:** E2
 
   ### TC-007d: Sort products by name, Z to A
 - **Requirement:** REQ-05 | **Priority:** Medium | **Technique:** equivalence partitioning (each sort option is one partition)
@@ -122,13 +122,13 @@ $15.99 T-shit
   3. Read the six prices from top to bottom.
 - **Expected result:** prices appear sorted by name in descending order.
 - **Actual result:**
-$15.99 T-shit,
+$15.99 T-shirt,
 $7.99 Onesie,
 $49.99 Fleece Jacket,  
 $15.99 Bolt T-Shirt,
 $9.99 Bike Light,
 $29.99 Backpack,
-- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
+- **Status:** Pass | **Date:** November 8, 2026 | **Env:** E2
 
 ### TC-008: Add one product to the cart
 - **Requirement:** REQ-06, REQ-07 | **Priority:** High
@@ -137,7 +137,7 @@ $29.99 Backpack,
   1. Click **Add to cart** on the first product.
 - **Expected result:** the cart icon shows `1` and the button on that product changes to **Remove**.
 - **Actual result:** The cart icon shows "1" and the button on that product changes to Remove.
-- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
+- **Status:** Pass | **Date:** November 8, 2026 | **Env:** E2
 
 ### TC-009: Remove a product from the product list
 - **Requirement:** REQ-06, REQ-07 | **Priority:** Medium
@@ -145,7 +145,7 @@ $29.99 Backpack,
 - **Steps:** click **Remove** on that product.
 - **Expected result:** the cart badge disappears and the button changes back to **Add to cart**.
 - **Actual result:** The cart icon disappears the "1" and the button on the product, goes back to " add to cart ".
-- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
+- **Status:** Pass | **Date:** November 8, 2026 | **Env:** E2
 
 ---
 
@@ -160,7 +160,7 @@ $29.99 Backpack,
 - **Expected result:** the cart lists exactly those two products, with the same names and prices, quantity 1 each.
 - **Actual result:** Two different products were added to cart ( Onesie - $7.99 & Bolt T-Shirt - $15.99 ).
 The cart lists exactly those two products, with the same names and prices, quantity 1 each.
-- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
+- **Status:** Pass | **Date:** November 8, 2026 | **Env:** E2
 
 ### TC-011: Complete a purchase with valid data (happy path)
 - **Requirement:** REQ-08 | **Priority:** High | **Technique:** equivalence partitioning (valid partition)
@@ -173,7 +173,7 @@ The cart lists exactly those two products, with the same names and prices, quant
 - **Expected result:** a confirmation page thanks the user for the order.
 - **Actual result:** The user was redirected to a new page with the following message " Thank you for your order!
 Your order has been dispatched, and will arrive just as fast as the pony can get there!"
-- **Status:** Pass | **Date:** 08/11/2026 and 22/11/2026 | **Env:** E2
+- **Status:** Pass | **Date:** November 8, 2026 and November 22, 2026  | **Env:** E2
 - **Evidence:** [TC11-confirmation page](https://github.com/user-attachments/assets/3ab8cb00-6677-4378-8816-c3ac4c53301c)
 
 ### TC-012: Checkout with an empty first name
@@ -183,7 +183,7 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 - **Steps:** fill in the form, click **Continue**.
 - **Expected result:** the user stays on the form and sees an error saying the first name is required.
 - **Actual result:** The user stays on the form and sees an error saying " Error: First Name is required".
-- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
+- **Status:** Pass | **Date:** November 8, 2026 | **Env:** E2
 - **Note:** repeat for an empty last name (TC-012b) and an empty postal code (TC-012c).
 
 ### TC-012b: Checkout with an empty last name
@@ -193,7 +193,7 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 - **Steps:** fill in the form, click **Continue**.
 - **Expected result:** the user stays on the form and sees an error saying the last name is required.
 - **Actual result:** The user stays on the form and sees an error saying " Error: Last Name is required".
-- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
+- **Status:** Pass | **Date:** November 8, 2026 | **Env:** E2
 
 ### TC-012c: Checkout with an empty postal code
 - **Requirement:** REQ-08 | **Priority:** Medium | **Technique:** equivalence partitioning (invalid partition)
@@ -213,7 +213,7 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 - **Expected result:** the calculated sum equals the Total shown, to the cent.
 - **Actual result:** Item total = 79,98 | Tax = 6,4 | Total shown = 86,38 | My sum = 86,38
   Products chose: $29.99 Backpack and $49.99 Fleece Jacket  
-- **Status:** Pass | **Date:** 08/11/2026 and 22/11/2026 | **Env:** E2
+- **Status:** Pass | **Date:** November 8, 2026 and November 22, 2026 | **Env:** E2
 - **Evidence:** [TC13-products sum](https://github.com/user-attachments/assets/a90f688c-3dd6-4999-86b6-88eef77f331a)
   
 ### TC-014: Checkout with an empty cart (boundary: 0 items)
@@ -224,7 +224,7 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
   2. Click **Checkout**.
 - **Expected result:** the user cannot proceed to checkout, or sees a message that the cart is empty.
 - **Actual result:** The user was redirected to a new page " Checkout: Your Information ".
-- **Status:** Fail | **Date:** 08/11/2026 and 22/11/2026 | **Env:** E2
+- **Status:** Fail | **Date:** November 8, 2026 and November 22, 2026 | **Env:** E2
 - **Note:** if the site lets you continue, decide: is this a defect against REQ-10 or is my assumption too strict? Write down your reasoning either way.
 It is describe on REQ-10 that "A user cannot check out with an empty cart." and in this test case, the cart with 0 products, the user was redirected to a new page
 for fill in his information.
@@ -242,7 +242,7 @@ for fill in his information.
 - **Expected result:** badge shows `6`, cart lists 6 items, total is correct, order completes.
 - **Actual result:** Badge shows 6 items, cart lists 6 items, total is accordingly.
 - Item total = 129,94 | Tax = 10,4 | Total shown = 140,34 | My sum = 140,34
-- **Status:** Pass | **Date:** 22/11/2026 | **Env:** E2
+- **Status:** Pass | **Date:** November 22, 2026 | **Env:** E2
 - **Evidence:** [TC15-login empty cart](https://github.com/user-attachments/assets/b3362775-5cb8-49f2-b3a5-8d6f7c7173c7)
   [TC15-badge shows 6](https://github.com/user-attachments/assets/263b7e98-3515-4293-9056-1fbf9d9fa343) ;
   [TC15-cart lists 6](https://github.com/user-attachments/assets/1830cc9a-2d65-4b7f-b7e4-fb9885c5ab40) ;
@@ -261,7 +261,7 @@ for fill in his information.
 - **Expected result:** the user lands on the login page after logout, and Back does not show the product list.
 - **Actual result:** After select Logout button, the user was redirected to Login page and selecting back button in the browser does not show the product list again,
 actually shows the following message "Epic sadface: You can only access '/inventory.html' when you are logged in."
-- **Status:** Pass | **Date:** 22/11/2026 | **Env:** E2
+- **Status:** Pass | **Date:** November 22, 2026 | **Env:** E2
 -  **Evidence:** [TC16-logout and backbutton](https://github.com/user-attachments/assets/b6a6aa70-c62d-4c50-a0af-2aa737072193)
 
 ---

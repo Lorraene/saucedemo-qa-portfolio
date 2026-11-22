@@ -174,7 +174,7 @@ The cart lists exactly those two products, with the same names and prices, quant
 - **Actual result:** The user was redirected to a new page with the following message " Thank you for your order!
 Your order has been dispatched, and will arrive just as fast as the pony can get there!"
 - **Status:** Pass | **Date:** 08/11/2026 and 22/11/2026 | **Env:** E2
-- **Evidence:** TC11-confirmation.page
+- **Evidence:** [TC11-confirmation page](https://github.com/user-attachments/assets/3ab8cb00-6677-4378-8816-c3ac4c53301c)
 
 ### TC-012: Checkout with an empty first name
 - **Requirement:** REQ-08 | **Priority:** Medium | **Technique:** equivalence partitioning (invalid partition)
@@ -214,8 +214,8 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 - **Actual result:** Item total = 79,98 | Tax = 6,4 | Total shown = 86,38 | My sum = 86,38
   Products chose: $29.99 Backpack and $49.99 Fleece Jacket  
 - **Status:** Pass | **Date:** 08/11/2026 and 22/11/2026 | **Env:** E2
-- **Evidence:** TC13-products.sum
-
+- **Evidence:** [TC13-products sum](https://github.com/user-attachments/assets/a90f688c-3dd6-4999-86b6-88eef77f331a)
+  
 ### TC-014: Checkout with an empty cart (boundary: 0 items)
 - **Requirement:** REQ-10 | **Priority:** High | **Technique:** boundary value analysis (lower boundary, invalid)
 - **Preconditions:** logged in, cart empty
@@ -228,7 +228,8 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 - **Note:** if the site lets you continue, decide: is this a defect against REQ-10 or is my assumption too strict? Write down your reasoning either way.
 It is describe on REQ-10 that "A user cannot check out with an empty cart." and in this test case, the cart with 0 products, the user was redirected to a new page
 for fill in his information.
-- **Evidence:** TC14-empty.cart ; TC14-checkout.empty.cart
+- **Evidence:** [TC14-empty cart](https://github.com/user-attachments/assets/a6c91c90-d2ab-47b0-9914-bb2f07eb367b) ;
+  [TC14-checkout empty cart](https://github.com/user-attachments/assets/6d1dab55-f9f9-4035-b303-607b4496d89b)
 
 ### TC-015: Checkout with all available products (boundary: maximum items)
 - **Requirement:** REQ-06, REQ-09 | **Priority:** Medium | **Technique:** boundary value analysis (upper boundary, valid)
@@ -242,7 +243,11 @@ for fill in his information.
 - **Actual result:** Badge shows 6 items, cart lists 6 items, total is accordingly.
 - Item total = 129,94 | Tax = 10,4 | Total shown = 140,34 | My sum = 140,34
 - **Status:** Pass | **Date:** 22/11/2026 | **Env:** E2
-- **Evidence:** TC15-login.empty.cart ; TC15-badge.shows.6 ; TC15-cart.lists.6 ; TC15-my.sum
+- **Evidence:** [TC15-login empty cart](https://github.com/user-attachments/assets/b3362775-5cb8-49f2-b3a5-8d6f7c7173c7)
+  [TC15-badge shows 6](https://github.com/user-attachments/assets/263b7e98-3515-4293-9056-1fbf9d9fa343) ;
+  [TC15-cart lists 6](https://github.com/user-attachments/assets/1830cc9a-2d65-4b7f-b7e4-fb9885c5ab40) ;
+  [TC15-my sum](https://github.com/user-attachments/assets/5b733689-f8fc-4db2-838b-718cbcb18c9a)
+
 ---
 
 ## Logout
@@ -257,7 +262,7 @@ for fill in his information.
 - **Actual result:** After select Logout button, the user was redirected to Login page and selecting back button in the browser does not show the product list again,
 actually shows the following message "Epic sadface: You can only access '/inventory.html' when you are logged in."
 - **Status:** Pass | **Date:** 22/11/2026 | **Env:** E2
--  **Evidence:** TC16-logout.and.backbutton
+-  **Evidence:** [TC16-logout and backbutton](https://github.com/user-attachments/assets/b6a6aa70-c62d-4c50-a0af-2aa737072193)
 
 ---
 

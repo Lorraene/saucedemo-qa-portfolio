@@ -241,7 +241,7 @@ for fill in his information.
 - **Expected result:** badge shows `6`, cart lists 6 items, total is correct, order completes.
 - **Actual result:** Badge shows 6 items, cart lists 6 items, total is accordingly.
 - Item total = 129,94 | Tax = 10,4 | Total shown = 140,34 | My sum = 140,34
-- **Status:** Not run | **Date:** 22/11/2026 | **Env:** E2
+- **Status:** Pass | **Date:** 22/11/2026 | **Env:** E2
 - **Evidence:** TC15-login.empty.cart ; TC15-badge.shows.6 ; TC15-cart.lists.6 ; TC15-my.sum
 ---
 
@@ -254,8 +254,10 @@ for fill in his information.
   1. Open the menu and click **Logout**.
   2. Click the browser **Back** button.
 - **Expected result:** the user lands on the login page after logout, and Back does not show the product list.
-- **Actual result:** [fill in]
-- **Status:** Not run
+- **Actual result:** After select Logout button, the user was redirected to Login page and selecting back button in the browser does not show the product list again,
+actually shows the following message "Epic sadface: You can only access '/inventory.html' when you are logged in."
+- **Status:** Pass | **Date:** 22/11/2026 | **Env:** E2
+-  **Evidence:** TC16-logout.and.backbutton
 
 ---
 

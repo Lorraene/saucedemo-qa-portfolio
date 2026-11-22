@@ -8,7 +8,7 @@
 
 ![TC01-homepage](https://github.com/user-attachments/assets/3877f429-ad8c-4050-9050-1ac7fc79a916)
 
-**TC01-Homepage.logout.buttom**
+**TC01-Homepage.logout.button**
 
 ![TC01-Homepage logoutbuttom](https://github.com/user-attachments/assets/0283da6a-67db-4a32-9668-5fa364328814)
 
@@ -30,7 +30,7 @@
 
 **TC14-checkout.empty.cart**
 
-![TC14-chekout empty cart](https://github.com/user-attachments/assets/6d1dab55-f9f9-4035-b303-607b4496d89b)
+![TC14-checkout empty cart](https://github.com/user-attachments/assets/6d1dab55-f9f9-4035-b303-607b4496d89b)
 
 **TC15-login.empty.cart**
 

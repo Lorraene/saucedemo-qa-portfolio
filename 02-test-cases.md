@@ -296,17 +296,20 @@ actually shows the following message "Epic sadface: You can only access '/invent
 - **Expected result:** the product list opens and shows 6 products.
 - **Actual result:** We were able to login and see 6 products.
 - **Status:** Pass | **Date:** November 22, 2026 | **Env:** E1
+  
 
   **TC-008: Add one product to the cart**
 - **Expected result:** the cart icon shows `1` and the button on that product changes to **Remove**.
 - **Actual result:** The cart icon shows "1" and the button on that product changes to Remove.
 - **Status:** Pass | **Date:** November 22, 2026 | **Env:** E1
+  
 
   **TC-011: Complete a purchase with valid data (happy path)**
 - **Expected result:** a confirmation page thanks the user for the order.
 - **Actual result:** The user was redirected to a new page with the following message " Thank you for your order!
 Your order has been dispatched, and will arrive just as fast as the pony can get there!"
 - **Status:** Pass | **Date:** November 22, 2026 | **Env:** E1
+  
 
   **TC-016: Logout and the back button**
 - **Expected result:** the user lands on the login page after logout, and Back does not show the product list.

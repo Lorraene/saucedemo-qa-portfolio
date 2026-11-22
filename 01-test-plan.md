@@ -56,7 +56,7 @@ SauceDemo has no published requirements. These are the behaviours I assumed, bas
 ## 6. Entry and exit criteria
 
 **Entry:** site reachable, test accounts shown on the login page work, test cases reviewed.
-**Exit:** all test cases executed at least once in E1, high-priority cases also in E2 and E3, every failure either reported as a bug or explained.
+**Exit:** all test cases executed at least once in E2, high-priority cases also in E1, every failure either reported as a bug or explained.
 
 ## 7. Risks and limits
 

@@ -313,8 +313,7 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 
   **TC-016: Logout and the back button**
 - **Expected result:** the user lands on the login page after logout, and Back does not show the product list.
-- **Actual result:** After select Logout button, the user was redirected to Login page and selecting back button in the browser does not show the product list again,
-actually shows the following message "Epic sadface: You can only access '/inventory.html' when you are logged in."
+- **Actual result:** After select Logout button, the user was redirected to Login page and selecting back button in the browser does not show the product list again,actually shows the following message "Epic sadface: You can only access '/inventory.html' when you are logged in."
 - **Status:** Pass | **Date:** November 22, 2026 | **Env:** E1
 
 ---
@@ -325,5 +324,24 @@ actually shows the following message "Epic sadface: You can only access '/invent
 - **Mission:** explore the product list, product pages, cart and checkout as `problem_user` and compare with `standard_user`, to find behaviour that looks wrong.
 - **Time box:** 30 minutes
 - **Notes to take while exploring:** what you clicked, what you expected, what happened, screenshots.
+ **Product Page**
+1. After logging in with the user "problem_user" and being redirected to the main "Products" page, the expected result would be to be able to see the available products with their respective images. For example, the Sauce Labs Bolt T-Shirt item should show an image of a shirt.
+However, it is possible to see that the product images do not match the actual products. An image of a dog appears on all products.
+2. Selected the filter button.
+Users should be able to sort products by price or name ( ascending and descending ) at the first try.
+However, the filter button is not working correctly, I have tested it three times, in both environments E1 and E2, test failed twice and passed once.
+Selecting the filter button the available sorting options are displayed. Then, selecting any of them does not apply the chosen filter or change the product order. As a result, users are unable to sort products as expected.
+3. Clicking at the " Add to cart " button, not every item is selected.
+User should be able to add any item to the cart at the product page.
+
+**Cart**
+1. It only show the three items that button "" Add to cart " allowed.
+
+**Checkout**
+1. After selecting Checkout button, user are redirected to "Checkout: Your information" page and be able to fill in all information requested, as such:
+First Name, Last Name and Zip/Postal Code.
+However, it allows the user to fill in the First Name field but when the user goes to fill in the Last Name field, it is redirected to the First Name field,
+not allowing to complete all others fields.
+
 - **Output:** a short list of observations, and one bug report per distinct defect in `03-bug-reports/`.
-- **Session notes:** [fill in]
+- **Session notes:** The exploratory test was performed in the E1 environment.

@@ -33,7 +33,7 @@
 - **Steps:** enter both fields, click **Login**.
 - **Expected result:** the user stays on the login page and sees an error saying the user has been locked out.
 - **Actual result:** The user stays on the login page and sees an error saying the user has been locked out.
-- **Status:** Pass
+- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
 
 ### TC-003: Login with a wrong password
 - **Requirement:** REQ-03 | **Priority:** High | **Technique:** equivalence partitioning (invalid partition)
@@ -105,11 +105,11 @@
   3. Read the six prices from top to bottom.
 - **Expected result:** prices appear sorted by name in ascending order.
 - **Actual result:**
-$29.99 Backpack
-$9.99 Bike Light
-$15.99 Bolt T-Shirt
-$49.99 Fleece Jacket  
-$7.99 Onesie
+$29.99 Backpack,
+$9.99 Bike Light,
+$15.99 Bolt T-Shirt,
+$49.99 Fleece Jacket,  
+$7.99 Onesie,
 $15.99 T-shit
 - **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
 
@@ -122,12 +122,12 @@ $15.99 T-shit
   3. Read the six prices from top to bottom.
 - **Expected result:** prices appear sorted by name in descending order.
 - **Actual result:**
-$15.99 T-shit
-$7.99 Onesie
-$49.99 Fleece Jacket  
-$15.99 Bolt T-Shirt
-$9.99 Bike Light
-$29.99 Backpack
+$15.99 T-shit,
+$7.99 Onesie,
+$49.99 Fleece Jacket,  
+$15.99 Bolt T-Shirt,
+$9.99 Bike Light,
+$29.99 Backpack,
 - **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
 
 ### TC-008: Add one product to the cart

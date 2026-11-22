@@ -15,5 +15,7 @@ TC01-Logout.page
 <img width="1051" height="565" alt="TC01-logout page" src="https://github.com/user-attachments/assets/252d4f6d-9c38-4a73-aa43-7bcc28cf6b8b" />
 
 TC11-confirmation.page
-
 <img width="536" height="283" alt="TC11-confirmation page" src="https://github.com/user-attachments/assets/3ab8cb00-6677-4378-8816-c3ac4c53301c" />
+
+TC13-products.sum
+<img width="1024" height="577" alt="TC13-products sum" src="https://github.com/user-attachments/assets/a90f688c-3dd6-4999-86b6-88eef77f331a" />

@@ -326,7 +326,7 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 - **Notes to take while exploring:**
   
  **Product Page**
-1. After logging in with the user "problem_user" and being redirected to the main "Products" page, the expected result would be to be able to see the available products with their respective images. For example, the Sauce Labs Bolt T-Shirt item should show an image of a shirt.
+1. After logging in with the user "problem_user" and being redirected to the main "Products" page, the expected result should be able to see the available products with their respective images. For example, the Sauce Labs Bolt T-Shirt item should show an image of a shirt.
 However, it is possible to see that the product images do not match the actual products. An image of a dog appears on all products.
 2. Selected the filter button.
 Users should be able to sort products by price or name ( ascending and descending ) at the first try.

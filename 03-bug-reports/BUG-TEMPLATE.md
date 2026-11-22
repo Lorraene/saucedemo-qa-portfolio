@@ -57,8 +57,8 @@ N/A
 | **Reported on** | November 22, 2026 |
 | **Related test case** | EXP-001 |
 | **Related requirement** | Exploratory test |
-| **Severity** | High: User was redirected to "Checkout: Your Information" page and "Checkout: Overview" page and was able to complete the order without items.|
-| **Priority** | Medium: It does not affects mostly users and doesn't block real orders. |
+| **Severity** | Medium: Product images are incorrect (all show a dog photo), so the user cannot identify products visually. Purchasing is still possible and names and prices are correct, so no function is blocked.|
+| **Priority** | High: The defect is visible on the main product page to every user affected, hurts trust and conversion, and is likely a simple fix. Suggested for the next release. |
 | **Environment** | Google Chrome version 158.0.8127, macOS Golden Gate 27.0.1, MacBook Neo, desktop (full browser window) |
 | **Test account** | Username: problem_user & Password: secret_sauce|
 

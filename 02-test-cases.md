@@ -221,7 +221,7 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
   2. Click **Continue**.
 - **Expected result:** the user stays on the form and sees an error saying the postal code is required.
 - **Actual result:** The user stays on the form and sees an error saying " Error: Postal code is required".
-- **Status:** Pass | **Date:** 08/11/2026 | **Env:** E2
+- **Status:** Pass | **Date:** November 8, 2026 | **Env:** E2
 
 ### TC-013: Order total equals item total plus tax
 - **Requirement:** REQ-09 | **Priority:** High
@@ -246,7 +246,7 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 - **Status:** Fail | **Date:** November 8, 2026 and November 22, 2026 | **Env:** E2
 - **Note:** if the site lets you continue, decide: is this a defect against REQ-10 or is my assumption too strict? Write down your reasoning either way.
 It is describe on REQ-10 that "A user cannot check out with an empty cart." and in this test case, the cart with 0 products, the user was redirected to a new page
-for fill in his information.
+for fill in his information. In this case it is a defect against REQ-10.
 - **Evidence:** [TC14-empty cart](https://github.com/user-attachments/assets/a6c91c90-d2ab-47b0-9914-bb2f07eb367b) ;
   [TC14-checkout empty cart](https://github.com/user-attachments/assets/6d1dab55-f9f9-4035-b303-607b4496d89b)
 
@@ -262,7 +262,7 @@ for fill in his information.
 - **Actual result:** Badge shows 6 items, cart lists 6 items, total is accordingly.
 - Item total = 129,94 | Tax = 10,4 | Total shown = 140,34 | My sum = 140,34
 - **Status:** Pass | **Date:** November 22, 2026 | **Env:** E2
-- **Evidence:** [TC15-login empty cart](https://github.com/user-attachments/assets/b3362775-5cb8-49f2-b3a5-8d6f7c7173c7)
+- **Evidence:** 
   [TC15-badge shows 6](https://github.com/user-attachments/assets/263b7e98-3515-4293-9056-1fbf9d9fa343) ;
   [TC15-cart lists 6](https://github.com/user-attachments/assets/1830cc9a-2d65-4b7f-b7e4-fb9885c5ab40) ;
   [TC15-my sum](https://github.com/user-attachments/assets/5b733689-f8fc-4db2-838b-718cbcb18c9a)

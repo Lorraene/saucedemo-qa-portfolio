@@ -224,10 +224,11 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
   2. Click **Checkout**.
 - **Expected result:** the user cannot proceed to checkout, or sees a message that the cart is empty.
 - **Actual result:** The user was redirected to a new page " Checkout: Your Information ".
-- **Status:** Fail
+- **Status:** Fail | **Date:** 08/11/2026 and 22/11/2026 | **Env:** E2
 - **Note:** if the site lets you continue, decide: is this a defect against REQ-10 or is my assumption too strict? Write down your reasoning either way.
 It is describe on REQ-10 that "A user cannot check out with an empty cart." and in this test case, the cart with 0 products, the user was redirected to a new page
 for fill in his information.
+- **Evidence:** TC14-empty.cart ; TC14-checkout.empty.cart
 
 ### TC-015: Checkout with all available products (boundary: maximum items)
 - **Requirement:** REQ-06, REQ-09 | **Priority:** Medium | **Technique:** boundary value analysis (upper boundary, valid)
@@ -238,9 +239,10 @@ for fill in his information.
   3. Complete checkout with valid data.
   4. On the overview, verify the total as in TC-013.
 - **Expected result:** badge shows `6`, cart lists 6 items, total is correct, order completes.
-- **Actual result:** [fill in]
-- **Status:** Not run
-
+- **Actual result:** Badge shows 6 items, cart lists 6 items, total is accordingly.
+- Item total = 129,94 | Tax = 10,4 | Total shown = 140,34 | My sum = 140,34
+- **Status:** Not run | **Date:** 22/11/2026 | **Env:** E2
+- **Evidence:** TC15-login.empty.cart ; TC15-badge.shows.6 ; TC15-cart.lists.6 ; TC15--my.sum
 ---
 
 ## Logout

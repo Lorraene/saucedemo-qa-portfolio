@@ -5,41 +5,43 @@
 |---|---|
 | **ID** | BUG-001 |
 | **Status** | Open |
-| **Reported on** | [date] |
-| **Related test case** | [e.g. TC-008 or EXP-001] |
-| **Related requirement** | [e.g. REQ-06] |
-| **Severity** | [Critical / High / Medium / Low: how much it hurts the user] |
-| **Priority** | [High / Medium / Low: how soon it should be fixed] |
-| **Environment** | [browser and version, operating system, device or viewport] |
-| **Test account** | [which user you were logged in as] |
+| **Reported on** | 22/11!2026 |
+| **Related test case** | [TC14] |
+| **Related requirement** | [REQ-10] |
+| **Severity** | [High: User was redirected to Checkout: Your Information page and Checkout: Overview page and was able to complete the order without items.] |
+| **Priority** | [Medium: It does not affects mostly users and doesn't block real orders. ] |
+| **Environment** | [Safari version 27.0.1, macOS Golden Gate 27.0.1, MacBook Neo, desktop (full browser window)] |
+| **Test account** | Username: standard_user & Password: secret_sauce|
 
 ## Preconditions
-[State needed before step 1, e.g. "logged in, cart empty".]
+Logged in.
 
 ## Steps to reproduce
-1. [Step one]
-2. [Step two]
-3. [Step three]
+1. Without add any product, select cart button. 
+2. Click in Checkout button.
+
 
 ## Expected result
-[What should happen, and which requirement says so.]
+REQ-10 A user cannot check out with an empty cart.
+It should display a message stating that the cart is empty.
 
 ## Actual result
-[What happened. Quote on-screen messages exactly.]
+The user was redirected to a new page " Checkout: Your Information ".
 
 ## Evidence
-![screenshot](../evidence/BUG-001.png)
+<img width="513" height="283" alt="TC14-empty cart" src="https://github.com/user-attachments/assets/367763c2-8e4a-4cbd-aeb0-c8524f5ac317" />
+
+<img width="513" height="283" alt="TC14-chekout empty cart" src="https://github.com/user-attachments/assets/bd393d12-7ae1-48ba-8f25-78ec20792b9f" />
+
+
 
 ## Reproducibility
-[Always / Sometimes (x out of y tries) / Once]
+[Twice]
 
 ## Notes
-[Anything that helps the developer: workaround, other accounts affected, whether it happens in other browsers.]
+N/A
 
 ---
 
-### Severity guide (use consistently across all reports)
-- **Critical:** blocks the main flow, such as no one can complete a purchase.
-- **High:** a main feature gives wrong results, such as a wrong total.
+### Severity guide
 - **Medium:** a feature misbehaves but there is a workaround.
-- **Low:** cosmetic or minor wording issue.

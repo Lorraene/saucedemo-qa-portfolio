@@ -19,3 +19,10 @@ TC11-confirmation.page
 
 TC13-products.sum
 <img width="1024" height="577" alt="TC13-products sum" src="https://github.com/user-attachments/assets/a90f688c-3dd6-4999-86b6-88eef77f331a" />
+
+TC14-empty.cart
+<img width="513" height="283" alt="TC14-empty cart" src="https://github.com/user-attachments/assets/a6c91c90-d2ab-47b0-9914-bb2f07eb367b" />
+
+TC14-checkout.empty.cart
+<img width="513" height="283" alt="TC14-chekout empty cart" src="https://github.com/user-attachments/assets/6d1dab55-f9f9-4035-b303-607b4496d89b" />
+

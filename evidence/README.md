@@ -32,9 +32,6 @@
 
 ![TC14-checkout empty cart](https://github.com/user-attachments/assets/6d1dab55-f9f9-4035-b303-607b4496d89b)
 
-**TC15-login.empty.cart**
-
-![TC15-login empty cart](https://github.com/user-attachments/assets/b3362775-5cb8-49f2-b3a5-8d6f7c7173c7)
 
 **TC15-badge.shows.6**
 

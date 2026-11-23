@@ -20,7 +20,6 @@ Logged in.
 1. Without adding any product, select cart button. 
 2. Click in Checkout button.
 
-
 ## Expected result
 REQ-10 A user cannot check out with an empty cart.
 It should display a message stating that the cart is empty.
@@ -32,7 +31,6 @@ The user was redirected to a new page " Checkout: Your Information " and to "Che
 <img width="513" height="283" alt="TC14-empty cart" src="https://github.com/user-attachments/assets/367763c2-8e4a-4cbd-aeb0-c8524f5ac317" />
 
 <img width="513" height="283" alt="TC14-chekout empty cart" src="https://github.com/user-attachments/assets/bd393d12-7ae1-48ba-8f25-78ec20792b9f" />
-
 
 
 ## Reproducibility
@@ -67,7 +65,6 @@ Login page open.
 2. Execute login with credentials above.
 3. Observe the product images on the Products page.
 
-
 ## Expected result
 The user is redirected to the main page, called "Products," and views all items with the correct information and images.
 
@@ -77,13 +74,54 @@ The user is redirected to the main page, called "Products," and views all items 
 ## Evidence
 <img width="1024" height="592" alt="EXP-001 product page" src="https://github.com/user-attachments/assets/c336a139-2387-496d-8549-a3ddbe8b46b8" />
 
+## Reproducibility
+Reproduced at E1 (Chrome 2, macOS) and E2 (Safari 1, macOS)
+
+## Notes
+With `standard_user` the same page shows the correct images.
+Suggested fix: link each product to its correct image file.
+
+
+
+# BUG-EXP-002: Users should be able to sort products by price or name ( ascending and descending ) 
+
+
+| Field | Value |
+|---|---|
+| **ID** | BUG-003 |
+| **Status** | Open |
+| **Reported on** | November 23, 2026 |
+| **Related test case** | EXP-002 |
+| **Related requirement** | Exploratory test |
+| **Severity** | Medium: The filter button doesn't respond as it should, when user select to sort products by name or price. However, the user still can see and select the product. |
+| **Priority** | High: The defect is visible on the main product page to every user affected, hurts trust and conversion, and is likely a simple fix. Suggested for the next release. |
+| **Environment** | Google Chrome version 158.0.8127, macOS Golden Gate 27.0.1, MacBook Neo, desktop (full browser window) |
+| **Test account** | Username: problem_user & Password: secret_sauce|
+
+## Preconditions
+Login page open.
+
+## Steps to reproduce
+1. Access the page https://www.saucedemo.com/  
+2. Execute login with credentials above.
+3. Select the filter button.
+4. Choose to filter by Price ( Low to High ).
+
+## Expected result
+The user must be able to sort the products by Name ( A to Z ) or ( Z to A ) and by Price ( Low to High ) or ( High to Low ).
+
+## Actual result
+The filter button displays the options but when selected, doesn't change anything. Doesn't show the order selected.
+ 
+## Evidence
+<img width="1002" height="574" alt="image" src="https://github.com/user-attachments/assets/6dfb43c8-ba9e-4535-a283-1cc1ada06bb6" />
 
 ## Reproducibility
 Reproduced 3 times: E1 (Chrome 2, macOS) and E2 (Safari 1, macOS)
 
 ## Notes
-With `standard_user` the same page shows the correct images.
-Suggested fix: link each product to its correct image file.
+With the login `standard_user`, the user are able to sort products.
+Suggested to fix: Fix the functionality of the "Filter" button, ensuring that when it is triggered, the selected criteria are processed correctly and the displayed results are updated according to the parameters provided by the user.
 
 
 

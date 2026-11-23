@@ -32,7 +32,6 @@ The user was redirected to a new page " Checkout: Your Information " and to "Che
 
 <img width="513" height="283" alt="TC14-chekout empty cart" src="https://github.com/user-attachments/assets/bd393d12-7ae1-48ba-8f25-78ec20792b9f" />
 
-
 ## Reproducibility
 2 out of 2 attempts (Safari)
 
@@ -82,6 +81,7 @@ With `standard_user` the same page shows the correct images.
 Suggested fix: link each product to its correct image file.
 
 ---
+---
 
 # BUG-EXP-002: Users should be able to sort products by price or name ( ascending and descending ) 
 
@@ -124,6 +124,7 @@ With the login `standard_user`, the user are able to sort products.
 Suggested to fix: Fix the functionality of the "Filter" button, ensuring that when it is triggered, the selected criteria are processed correctly and the displayed results are updated according to the parameters provided by the user.
 
 ---
+---
 
 # BUG-EXP-003: "Add to Cart" Button Fails to Add Selected Products to the Shopping Cart
 
@@ -164,6 +165,7 @@ Reproduced 3 times: E1 (Chrome 2, macOS).
 With the login `standard_user`, the user are able to add all products of his choice.
 Suggested to fix: Fix the functionality of the "add to cart" button, ensuring that when it is triggered, the selected criteria are processed correctly and all selected products by usar are able to add to cart and cart updated as well.
 
+---
 ---
 
 # BUG-EXP-004: At page "Checkout: Your Information" the user is redirected to First Name field when attempting to complete Last Name field.

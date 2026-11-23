@@ -40,6 +40,7 @@ The user was redirected to a new page " Checkout: Your Information " and to "Che
 Suggested fix: disable Checkout when the cart is empty.
 
 ---
+---
 
 # BUG-EXP-001: All product images show the same dog photo when logged in as problem_user
 

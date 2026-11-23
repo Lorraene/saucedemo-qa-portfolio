@@ -39,8 +39,7 @@ The user was redirected to a new page " Checkout: Your Information " and to "Che
 ## Notes
 Suggested fix: disable Checkout when the cart is empty.
 
-
-
+---
 
 # BUG-EXP-001: All product images show the same dog photo when logged in as problem_user
 
@@ -81,7 +80,7 @@ Reproduced at E1 (Chrome 2, macOS) and E2 (Safari 1, macOS)
 With `standard_user` the same page shows the correct images.
 Suggested fix: link each product to its correct image file.
 
-
+---
 
 # BUG-EXP-002: Users should be able to sort products by price or name ( ascending and descending ) 
 
@@ -123,6 +122,7 @@ Reproduced 3 out of 3 attempts
 With the login `standard_user`, the user are able to sort products.
 Suggested to fix: Fix the functionality of the "Filter" button, ensuring that when it is triggered, the selected criteria are processed correctly and the displayed results are updated according to the parameters provided by the user.
 
+---
 
 # BUG-EXP-003: "Add to Cart" Button Fails to Add Selected Products to the Shopping Cart
 
@@ -163,8 +163,7 @@ Reproduced 3 times: E1 (Chrome 2, macOS).
 With the login `standard_user`, the user are able to add all products of his choice.
 Suggested to fix: Fix the functionality of the "add to cart" button, ensuring that when it is triggered, the selected criteria are processed correctly and all selected products by usar are able to add to cart and cart updated as well.
 
-
-
+---
 
 # BUG-EXP-004: At page "Checkout: Your Information" the user is redirected to First Name field when attempting to complete Last Name field.
 
@@ -202,7 +201,6 @@ User must be able to fill in all mandatory informations and complete the order.
 <img width="1014" height="574" alt="image" src="https://github.com/user-attachments/assets/cd906116-5b88-404c-aaa0-705a97a16dcd" />
 
 <img width="1024" height="575" alt="image" src="https://github.com/user-attachments/assets/b4221562-8594-41a0-a3f4-36949b35a529" />
-
 
 ## Reproducibility
 2 out of 2 attempts (Chrome)

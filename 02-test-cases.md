@@ -345,4 +345,4 @@ However, it allows the user to fill in the First Name field but when the user go
 not allowing to complete all others fields.
 
 - **Output:** a short list of observations, and one bug report per distinct defect in `03-bug-reports/`.
-- **Session notes:** The exploratory test was performed in the E1 environment.
+- **Session notes:** The exploratory test was performed in the E1 environment and at E2 environment just to be sure.

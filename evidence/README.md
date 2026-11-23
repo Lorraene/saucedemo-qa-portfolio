@@ -56,5 +56,6 @@
 <img width="1002" height="574" alt="image" src="https://github.com/user-attachments/assets/a40eaa3d-eb78-47b8-9533-c513ca590bae" />
 
 **EXP-001.add.to.cart**
+In the image, the products that shows as " Add to cart " are the ones that the button is not working.
 <img width="1012" height="559" alt="EXP-001 add to cart" src="https://github.com/user-attachments/assets/96f488e1-a62f-4aa4-9489-2589232fa0f6" />
 

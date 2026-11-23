@@ -14,7 +14,7 @@
 | **Test account** | Username: standard_user & Password: secret_sauce|
 
 ## Preconditions
-Logged in.
+Logged in with user standard_user.
 
 ## Steps to reproduce
 1. Without adding any product, select cart button. 
@@ -58,7 +58,7 @@ Suggested fix: disable Checkout when the cart is empty.
 | **Test account** | Username: problem_user & Password: secret_sauce|
 
 ## Preconditions
-Login page open.
+Logged in with user problem_user.
 
 ## Steps to reproduce
 1. Access the page https://www.saucedemo.com/  
@@ -99,7 +99,7 @@ Suggested fix: link each product to its correct image file.
 | **Test account** | Username: problem_user & Password: secret_sauce|
 
 ## Preconditions
-Login page open.
+Logged in with user problem_user.
 
 ## Steps to reproduce
 1. Access the page https://www.saucedemo.com/  
@@ -140,19 +140,18 @@ Suggested to fix: Fix the functionality of the "Filter" button, ensuring that wh
 | **Test account** | Username: problem_user & Password: secret_sauce|
 
 ## Preconditions
-Login page open.
+Login with user problem_user .
 
 ## Steps to reproduce
 1. Access the page https://www.saucedemo.com/  
 2. Execute login with credentials above.
-3. Select the filter button.
-4. Choose to filter by Price ( Low to High ).
+3. Try to add products to the cart by selecting the button " Add to cart ".
 
 ## Expected result
-The user must be able to sort the products by Name ( A to Z ) or ( Z to A ) and by Price ( Low to High ) or ( High to Low ).
+The user must be able to add to the cart any product selected.
 
 ## Actual result
-The filter button displays the options but when selected, doesn't change anything. Doesn't show the order selected.
+The button " add to cart" doesn't work in all products. The button falis in Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket and Test.allTheThings() T-Shirt (Red).
  
 ## Evidence
 <img width="1002" height="574" alt="image" src="https://github.com/user-attachments/assets/6dfb43c8-ba9e-4535-a283-1cc1ada06bb6" />

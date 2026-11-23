@@ -154,7 +154,7 @@ The user must be able to add to the cart any product selected.
 The button " add to cart" doesn't work in all products. The button falis in Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket and Test.allTheThings() T-Shirt (Red).
  
 ## Evidence
-<img width="1002" height="574" alt="image" src="https://github.com/user-attachments/assets/6dfb43c8-ba9e-4535-a283-1cc1ada06bb6" />
+<img width="1012" height="559" alt="image" src="https://github.com/user-attachments/assets/4e082b2b-6eff-4e03-91ab-0f44de114398" />
 
 ## Reproducibility
 Reproduced 3 times: E1 (Chrome 2, macOS).

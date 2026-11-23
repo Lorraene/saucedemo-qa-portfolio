@@ -49,6 +49,6 @@
 
 ![TC16-logout and backbutton](https://github.com/user-attachments/assets/b6a6aa70-c62d-4c50-a0af-2aa737072193)
 
-**EXP-001.product.page
+**EXP-001.product.page**
 <img width="1024" height="592" alt="EXP-001 product page" src="https://github.com/user-attachments/assets/9fb20c30-e7ee-494d-ad97-7b746e956c7a" />
 

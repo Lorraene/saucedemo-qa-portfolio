@@ -117,7 +117,7 @@ The filter button displays the options but when selected, doesn't change anythin
 <img width="1002" height="574" alt="image" src="https://github.com/user-attachments/assets/6dfb43c8-ba9e-4535-a283-1cc1ada06bb6" />
 
 ## Reproducibility
-Reproduced 3 times: E1 (Chrome 2, macOS) and E2 (Safari 1, macOS)
+Reproduced 3 out of 3 attempts
 
 ## Notes
 With the login `standard_user`, the user are able to sort products.
@@ -163,3 +163,46 @@ Reproduced 3 times: E1 (Chrome 2, macOS).
 With the login `standard_user`, the user are able to add all products of his choice.
 Suggested to fix: Fix the functionality of the "add to cart" button, ensuring that when it is triggered, the selected criteria are processed correctly and all selected products by usar are able to add to cart and cart updated as well.
 
+
+
+
+# BUG-EXP-004: At page "Checkout: Your Information" the user is redirected to First Name field when attempting to complete Last Name field.
+
+
+| Field | Value |
+|---|---|
+| **ID** | BUG-005 |
+| **Status** | Open |
+| **Reported on** | November 23, 2026 |
+| **Related test case** | EXP-004 |
+| **Related requirement** | Exploratory test |
+| **Severity** | Critical: User can not fill in all mandatory fields and can not complete the order.|
+| **Priority** | High: It must be fixed with high priority since affects directly the buying process and user can not complete the order. |
+| **Environment** | Safari version 27.0.1, macOS Golden Gate 27.0.1, MacBook Neo, desktop (full browser window) |
+| **Test account** | Username: standard_user & Password: secret_sauce|
+
+## Preconditions
+Logged in with user problem_user.
+Cart with selected products.
+
+## Steps to reproduce
+1. Select "Add to cart" button at any products. 
+2. Click in cart button.
+3. Click to Checkout.
+4. Fill in Fisrt Name field.
+5. Try to type at Last Name field.
+
+## Expected result
+User must be able to fill in all mandatory informations and complete the order.
+
+## Actual result
+ When the user goes to fill in the Last Name field, it is redirected to the First Name field, not allowing to complete all others fields.
+
+## Evidence
+<img width="1014" height="574" alt="image" src="https://github.com/user-attachments/assets/cd906116-5b88-404c-aaa0-705a97a16dcd" />
+
+<img width="1024" height="575" alt="image" src="https://github.com/user-attachments/assets/b4221562-8594-41a0-a3f4-36949b35a529" />
+
+
+## Reproducibility
+2 out of 2 attempts (Chrome)

@@ -7,6 +7,7 @@ One row per test run. Fill in after each session.
 | 1 | [date] | E1 | [Your Name] | | | | | | |
 | 2 | [date] | E2 | [Your Name] | | | | | | |
 | 3 | [date] | E3 | [Your Name] | | | | | | |
+| 4 | [date] | E3 | [Your Name] | | | | | | |
 
 ## Summary after all runs
 

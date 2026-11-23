@@ -124,4 +124,43 @@ With the login `standard_user`, the user are able to sort products.
 Suggested to fix: Fix the functionality of the "Filter" button, ensuring that when it is triggered, the selected criteria are processed correctly and the displayed results are updated according to the parameters provided by the user.
 
 
+# BUG-EXP-003: "Add to Cart" Button Fails to Add Selected Products to the Shopping Cart
+
+
+| Field | Value |
+|---|---|
+| **ID** | BUG-004 |
+| **Status** | Open |
+| **Reported on** | November 23, 2026 |
+| **Related test case** | EXP-003 |
+| **Related requirement** | Exploratory test |
+| **Severity** | Critical: The user cannot choose the product of his choice, affecting the user experience and sales. |
+| **Priority** | High: It must be fixed with high priority since affects the user shopping leading to leave without any buy and the company's sale.|
+| **Environment** | Google Chrome version 158.0.8127, macOS Golden Gate 27.0.1, MacBook Neo, desktop (full browser window) |
+| **Test account** | Username: problem_user & Password: secret_sauce|
+
+## Preconditions
+Login page open.
+
+## Steps to reproduce
+1. Access the page https://www.saucedemo.com/  
+2. Execute login with credentials above.
+3. Select the filter button.
+4. Choose to filter by Price ( Low to High ).
+
+## Expected result
+The user must be able to sort the products by Name ( A to Z ) or ( Z to A ) and by Price ( Low to High ) or ( High to Low ).
+
+## Actual result
+The filter button displays the options but when selected, doesn't change anything. Doesn't show the order selected.
+ 
+## Evidence
+<img width="1002" height="574" alt="image" src="https://github.com/user-attachments/assets/6dfb43c8-ba9e-4535-a283-1cc1ada06bb6" />
+
+## Reproducibility
+Reproduced 3 times: E1 (Chrome 2, macOS).
+
+## Notes
+With the login `standard_user`, the user are able to add all products of his choice.
+Suggested to fix: Fix the functionality of the "add to cart" button, ensuring that when it is triggered, the selected criteria are processed correctly and all selected products by usar are able to add to cart and cart updated as well.
 

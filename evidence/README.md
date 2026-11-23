@@ -59,3 +59,9 @@
 In the image, the products that shows as " Add to cart " are the ones that the button is not working.
 <img width="1012" height="559" alt="EXP-001 add to cart" src="https://github.com/user-attachments/assets/96f488e1-a62f-4aa4-9489-2589232fa0f6" />
 
+**EXP-001.checkout.your.information**
+<img width="1014" height="574" alt="image" src="https://github.com/user-attachments/assets/95ccd70e-f78c-4ac5-b604-f66f930e3f18" />
+
+
+**EXP-001.checkout.your.information2**
+<img width="1024" height="575" alt="image" src="https://github.com/user-attachments/assets/7407d212-c082-438d-ab26-561cc9f43147" />

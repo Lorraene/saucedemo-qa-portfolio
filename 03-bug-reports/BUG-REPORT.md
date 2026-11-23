@@ -54,7 +54,7 @@ Suggested fix: disable Checkout when the cart is empty.
 | **Reported on** | November 22, 2026 |
 | **Related test case** | EXP-001 |
 | **Related requirement** | Exploratory test |
-| **Severity** | Medium: Product images are incorrect (all show a dog photo), so the user cannot identify products visually. Purchasing is still possible and names and prices are correct, so no function is blocked.|
+| **Severity** | Medium: Product images are incorrect (all show a dog photo), so the user cannot identify products visually.|
 | **Priority** | High: The defect is visible on the main product page to every user affected, hurts trust and conversion, and is likely a simple fix. Suggested for the next release. |
 | **Environment** | Google Chrome version 158.0.8127, macOS Golden Gate 27.0.1, MacBook Neo, desktop (full browser window) |
 | **Test account** | Username: problem_user & Password: secret_sauce|
